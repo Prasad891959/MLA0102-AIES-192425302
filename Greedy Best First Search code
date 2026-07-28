@@ -7,7 +7,7 @@ graph = {
     'E': [],
     'F': []
 }
-heuristic = {
+h = {
     'A': 5,
     'B': 4,
     'C': 2,
@@ -15,20 +15,15 @@ heuristic = {
     'E': 3,
     'F': 0
 }
-def greedy_best_first(start, goal):
-    visited = set()
+def search(start, goal):
     pq = PriorityQueue()
-    pq.put((heuristic[start], start))
+    pq.put((h[start], start))
     while not pq.empty():
-        h, node = pq.get()
-        if node in visited:
-            continue
+        _, node = pq.get()
         print(node, end=" ")
-        visited.add(node)
         if node == goal:
-            print("\nGoal Reached")
+            print("Goal Reached")
             return
-        for neighbor in graph[node]:
-            if neighbor not in visited:
-                pq.put((heuristic[neighbor], neighbor))
-greedy_best_first('A', 'F')
+        for child in graph[node]:
+            pq.put((h[child], child))
+search('A', 'F')
