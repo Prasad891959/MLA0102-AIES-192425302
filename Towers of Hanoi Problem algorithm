@@ -1,0 +1,7 @@
+Read the number of disks n.
+If n == 1, move the disk from Source to Destination.
+Otherwise:
+Move n-1 disks from Source to Auxiliary.
+Move the largest disk from Source to Destination.
+Move n-1 disks from Auxiliary to Destination.
+Stop when all disks reach the destination.
