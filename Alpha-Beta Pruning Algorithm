@@ -1,0 +1,7 @@
+Start from the root node.
+Set alpha = -∞ and beta = +∞.
+Explore the game tree using Minimax.
+For MAX, update alpha.
+For MIN, update beta.
+If alpha >= beta, prune the remaining branches.
+Continue until the best value is obtained.
