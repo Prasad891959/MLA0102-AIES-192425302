@@ -1,0 +1,7 @@
+Start from the current game state.
+Generate all possible moves.
+Recursively evaluate the resulting game states.
+MAX chooses the highest score.
+MIN chooses the lowest score.
+Continue until a terminal state is reached.
+Return the best move for MAX.
