@@ -1,0 +1,7 @@
+Identify all unique letters in the arithmetic puzzle.
+Assign a different digit from 0–9 to each letter.
+Ensure the first letter of a number is not zero.
+Substitute the digits into the equation.
+Check whether the arithmetic equation is correct.
+If correct, display the solution.
+Otherwise, try another valid assignment.
