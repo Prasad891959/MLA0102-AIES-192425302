@@ -1,0 +1,6 @@
+Collect the training data.
+Select the best feature for splitting the data.
+Divide the data into branches based on that feature.
+Repeat the splitting process for each branch.
+Stop when the data is sufficiently classified.
+Use the constructed decision tree to predict the class of new data.
