@@ -1,0 +1,33 @@
+from sklearn.tree import DecisionTreeClassifier
+
+# Training data
+# [Income, Credit Score]
+X = [
+    [30000, 550],
+    [40000, 600],
+    [50000, 650],
+    [60000, 700],
+    [70000, 750],
+    [80000, 800]
+]
+
+# 0 = Reject, 1 = Approve
+y = [0, 0, 1, 1, 1, 1]
+
+# Create Decision Tree
+model = DecisionTreeClassifier(random_state=0)
+
+# Train the model
+model.fit(X, y)
+
+# Test data
+income = 55000
+credit_score = 680
+
+prediction = model.predict([[income, credit_score]])
+
+if prediction[0] == 1:
+    print("Loan Approved")
+else:
+    print("Loan Rejected")
+
